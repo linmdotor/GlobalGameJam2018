@@ -18,9 +18,4 @@ public class GameManager : MonoBehaviour {
 	{
 		Debug.Log("PERDISTE");
 	}
-
-	public static void TimeOut()
-	{
-		Debug.Log("TIEMPOOOOOOO");
-	}
 }
