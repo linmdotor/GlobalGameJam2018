@@ -11,18 +11,18 @@
 	<option1points>
 		<object cabeza="0">5</object>
 		<object cabeza="1">-10</object>
-		<object cabeza="2">36</object>
-		<object torso="0">98</object>
-		<object torso="1">-67</object>
-		<object torso="2">26</object>
+		<object cabeza="2">0</object>
+		<object torso="0">5</object>
+		<object torso="1">5</object>
+		<object torso="2">-10</object>
 	</option1points>
 	<option2points>
-		<object cabeza="0">555</object>
-		<object cabeza="1">-1000</object>
-		<object cabeza="2">3666</object>
-		<object torso="0">9888</object>
-		<object torso="1">-6777</object>
-		<object torso="2">2666</object>
+		<object cabeza="0">0</object>
+		<object cabeza="1">0</object>
+		<object cabeza="2">10</object>
+		<object torso="0">-10</object>
+		<object torso="1">-5</object>
+		<object torso="2">5</object>
 	</option2points>
   </question>
   
@@ -34,20 +34,20 @@
 	<correctanswer>Me gusta que me trates tan mal</correctanswer>
     <wronganswer>Vaya tontería</wronganswer>
 	<option1points>
-		<object cabeza="0">115</object>
-		<object cabeza="1">-1110</object>
-		<object cabeza="2">1136</object>
-		<object torso="0">1198</object>
-		<object torso="1">-1167</object>
-		<object torso="2">1126</object>
+		<object cabeza="0">1</object>
+		<object cabeza="1">5</object>
+		<object cabeza="2">1</object>
+		<object torso="0">0</object>
+		<object torso="1">0</object>
+		<object torso="2">0</object>
 	</option1points>
 	<option2points>
-		<object cabeza="0">11555</object>
-		<object cabeza="1">-111000</object>
-		<object cabeza="2">113666</object>
-		<object torso="0">119888</object>
-		<object torso="1">-116777</object>
-		<object torso="2">112666</object>
+		<object cabeza="0">10</object>
+		<object cabeza="1">-20</object>
+		<object cabeza="2">-20</object>
+		<object torso="0">5</object>
+		<object torso="1">5</object>
+		<object torso="2">10</object>
 	</option2points>
   </question>
 </questions>

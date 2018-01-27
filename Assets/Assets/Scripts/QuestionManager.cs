@@ -21,6 +21,8 @@ public class QuestionManager : MonoBehaviour {
 
 	public float SECONDS_PER_WORD = 0.45f;
 
+	public BarraAmor life;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -126,10 +128,24 @@ public class QuestionManager : MonoBehaviour {
 
 		// Ya hemos analizado todas las features,
 		// Feedback bueno o malo en función de si hemos obtenido puntuación positiva y negativa
-		Debug.Log("PUNTOSSSSSSSSSS: " + result);
+		Debug.Log("PUNTOSSSSSSSSSS DE LA RESPUESTA: " + result);
+		life.amorValue += result;
+		Debug.Log("PUNTOS ACTUALES: " + life.amorValue);
 
 		// Textos de respuesta buenos o malos
 		// Animación del tipo bueno o malo
+
+		// Si pierde o gana, se llamaría aquí a la escena final
+		if (life.amorValue <= 0)
+		{
+			// PERDISTE!!!
+			Debug.Log("PERDISTE");
+		}
+		else if(life.amorValue >= life.MAX_VALUE)
+		{
+			// GANASTE!!!
+			Debug.Log("GANASTE");
+		}
 
 		// Espera sin texto 2 o 3 segundos
 		yield return new WaitForSeconds(3);

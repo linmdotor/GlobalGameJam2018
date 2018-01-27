@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BarraAmor : MonoBehaviour {
 
-	private const float MAX_VALUE = 100.0f;
+	public float MAX_VALUE = 100.0f;
 
 	public float amorValue;
 	public Image loveBarSlider;

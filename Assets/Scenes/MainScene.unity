@@ -1008,6 +1008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0283edc154bd98a42a8cea212c708e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MAX_VALUE: 100
   amorValue: 50
   loveBarSlider: {fileID: 632026549}
 --- !u!1 &921952138
@@ -1687,6 +1688,7 @@ MonoBehaviour:
   option2Text: {fileID: 1734920077}
   randomizer: {fileID: 34029651}
   SECONDS_PER_WORD: 0.45
+  life: {fileID: 879831158}
 --- !u!1 &1942312624
 GameObject:
   m_ObjectHideFlags: 0
