@@ -136,9 +136,9 @@ public class QuestionManager : MonoBehaviour {
 		
 		if(result >= 0)
 		{
-			// TODO: Animación del tipo bueno
+			// TODO: Animación de has acertado
 
-			// Textos de respuesta buenos
+			// Textos de has acertado
 			foreach (string texto in currentQuestion.correctAnswerTexts)
 			{
 				questionText.text = texto;
@@ -151,9 +151,9 @@ public class QuestionManager : MonoBehaviour {
 		}
 		else
 		{
-			// TODO: Animación del tipo malo
+			// TODO: Animación de has fallado
 
-			// Textos de respuesta malos
+			// Textos de has fallado
 			foreach (string texto in currentQuestion.wrongAnswerTexts)
 			{
 				questionText.text = texto;
@@ -165,20 +165,17 @@ public class QuestionManager : MonoBehaviour {
 			}
 		}
 
-
-
 		// Si pierde o gana, se llamaría aquí a la escena final
 		if (life.amorValue <= 0)
 		{
 			// PERDISTE!!!
-			Debug.Log("PERDISTE");
+			SceneManager.YouLoseEnd();
 		}
 		else if(life.amorValue >= life.MAX_VALUE)
 		{
 			// GANASTE!!!
-			Debug.Log("GANASTE");
+			SceneManager.YouWinEnd();
 		}
-
 		
 		RemoveCurrentQuestion();
 

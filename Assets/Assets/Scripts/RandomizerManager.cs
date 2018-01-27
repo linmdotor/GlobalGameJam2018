@@ -8,17 +8,6 @@ public class RandomizerManager : MonoBehaviour {
 	public Text characterName;
 	public List<string> randomNames;
 
-	// Use this for initialization
-	void Start ()
-	{
-		Randomize();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
 	public void Randomize()
 	{
 		characterName.text = randomNames[Random.Range(0, randomNames.Count)];
