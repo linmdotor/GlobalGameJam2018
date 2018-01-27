@@ -29,6 +29,7 @@ public class QuestionManager : MonoBehaviour {
 		RemoveCurrentQuestion();
 		unUsedQuestions = questionsParser.XmlToArray(XmlAsset);
 		Debug.Log("Preguntas cargadas correctamente");
+		LoadNewQuestion();
 	}
 
 	public void LoadNewQuestion()
@@ -132,8 +133,39 @@ public class QuestionManager : MonoBehaviour {
 		life.amorValue += result;
 		Debug.Log("PUNTOS ACTUALES: " + life.amorValue);
 
-		// Textos de respuesta buenos o malos
-		// Animación del tipo bueno o malo
+		
+		if(result >= 0)
+		{
+			// TODO: Animación del tipo bueno
+
+			// Textos de respuesta buenos
+			foreach (string texto in currentQuestion.correctAnswerTexts)
+			{
+				questionText.text = texto;
+				//Wait for X seconds
+				// Consideramos que la longitud media de una palabra es de 5 letras... aprox... xD.
+				float waitSecs = (float)texto.Length * SECONDS_PER_WORD / 5.0f;
+				Debug.Log("MUESTRA EL TEXTO " + waitSecs + " secs.");
+				yield return new WaitForSeconds(waitSecs);
+			}
+		}
+		else
+		{
+			// TODO: Animación del tipo malo
+
+			// Textos de respuesta malos
+			foreach (string texto in currentQuestion.wrongAnswerTexts)
+			{
+				questionText.text = texto;
+				//Wait for X seconds
+				// Consideramos que la longitud media de una palabra es de 5 letras... aprox... xD.
+				float waitSecs = (float)texto.Length * SECONDS_PER_WORD / 5.0f;
+				Debug.Log("MUESTRA EL TEXTO " + waitSecs + " secs.");
+				yield return new WaitForSeconds(waitSecs);
+			}
+		}
+
+
 
 		// Si pierde o gana, se llamaría aquí a la escena final
 		if (life.amorValue <= 0)
@@ -147,8 +179,13 @@ public class QuestionManager : MonoBehaviour {
 			Debug.Log("GANASTE");
 		}
 
-		// Espera sin texto 2 o 3 segundos
-		yield return new WaitForSeconds(3);
+		
 		RemoveCurrentQuestion();
+
+		// Espera sin texto 2 o 3 segundos
+		yield return new WaitForSeconds(2);
+
+		LoadNewQuestion();
 	}
+
 }
