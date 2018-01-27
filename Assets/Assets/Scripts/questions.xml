@@ -1,10 +1,12 @@
 <questions>
   <question>
     <id>1</id>
-    <text>Oye, me darías un masaje, ¿por favor?</text>
-    <option1> Estás flipando</option1>
-    <option2> Claro que sí, acercate un poco...</option2>
-	<correctanswer> Mnnn... tú sabes lo que me gusta...</correctanswer>
+    <text>Hola guapo... ¿tendrías un rato para hacer cosas conmigo?</text>
+	<text>Oye, me darías un masaje, ¿por favor?</text>
+    <option1>Estás flipando</option1>	
+    <option2>Claro que sí, acercate un poco...</option2>
+	<correctanswer>Mnnn... tú sabes lo que me gusta...</correctanswer>
+	<correctanswer>Quizás deberíamos irnos a otro sitio</correctanswer>
     <wronganswer>¡Eres un tocabolas!</wronganswer>
 	<option1points>
 		<object cabeza="1">5</object>
