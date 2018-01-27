@@ -7,6 +7,7 @@ public class XmlParser {
 
 	public class Question
 	{
+		public int id;
 		public List<string> texts;
 		public string option1text;
 		public string option2text;
@@ -33,9 +34,9 @@ public class XmlParser {
 	};
 
 
-	public Dictionary<int, Question> XmlToArray(TextAsset XmlAsset)
+	public List<Question> XmlToArray(TextAsset XmlAsset)
 	{
-		Dictionary<int, Question> questions = new Dictionary<int, Question>();
+		List<Question> questions = new List<Question>();
 
 		XmlDocument xmlDoc = new XmlDocument(); // xmlDoc is the new xml document.
 		xmlDoc.LoadXml(XmlAsset.text); // load the file.
@@ -45,14 +46,13 @@ public class XmlParser {
 		{
 			// Creates a new Question
 			Question tempQuestion = new Question();
-			int tempId = 0;
 
 			XmlNodeList questionContent = questionInfo.ChildNodes;
 			foreach (XmlNode questionItem in questionContent) // Busca cada uno de los tags.
 			{
 				if (questionItem.Name == "id")
 				{
-					tempId = Int32.Parse(questionItem.InnerText);
+					tempQuestion.id = Int32.Parse(questionItem.InnerText);
 					//Debug.Log("ID: " + questionItem.InnerText);
 				}
 
@@ -117,7 +117,7 @@ public class XmlParser {
 					}
 				}	
 			}
-			questions.Add(tempId, tempQuestion);
+			questions.Add(tempQuestion);
 			//Debug.Log("***********************************");
 		}
 

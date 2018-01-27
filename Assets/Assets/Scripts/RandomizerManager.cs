@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
@@ -22,13 +21,11 @@ public class RandomizerManager : MonoBehaviour {
 
 	public void Randomize()
 	{
-		Debug.Log("GENERATED NEW CHARACTER: -------------------------");
 		characterName.text = randomNames[Random.Range(0, randomNames.Count)];
 
 		foreach (RandomFeature feature in randomFeatures)
 		{
 			feature.Randomize();
-			Debug.Log(feature.GetFeatureName() + ": " + feature.GetCurrentFeature());
 		}
 	}
 }
