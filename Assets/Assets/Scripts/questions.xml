@@ -1,0 +1,51 @@
+<questions>
+  <question>
+    <id>1</id>
+    <text>Oye, me darías un masaje, ¿por favor?</text>
+    <option1> Estás flipando</option1>
+    <option2> Claro que sí, acercate un poco...</option2>
+	<correctanswer> Mnnn... tú sabes lo que me gusta...</correctanswer>
+    <wronganswer>¡Eres un tocabolas!</wronganswer>
+	<option1points>
+		<object cabeza="1">5</object>
+		<object cabeza="2">-10</object>
+		<object cabeza="3">36</object>
+		<object torso="1">98</object>
+		<object torso="2">-67</object>
+		<object torso="3">26</object>
+	</option1points>
+	<option2points>
+		<object cabeza="1">555</object>
+		<object cabeza="2">-1000</object>
+		<object cabeza="3">3666</object>
+		<object torso="1">9888</object>
+		<object torso="2">-6777</object>
+		<object torso="3">2666</object>
+	</option2points>
+  </question>
+  
+  <question>
+    <id>2</id>
+    <text>Estoy cansada de la rutina...</text>
+    <option1>Yo sí que estoy cansada de tí</option1>
+    <option2>¡Vamos a vivir nuevas experiencias!</option2>
+	<correctanswer>Me gusta que me trates tan mal</correctanswer>
+    <wronganswer>Vaya tontería</wronganswer>
+	<option1points>
+		<object cabeza="1">115</object>
+		<object cabeza="2">-1110</object>
+		<object cabeza="3">1136</object>
+		<object torso="1">1198</object>
+		<object torso="2">-1167</object>
+		<object torso="3">1126</object>
+	</option1points>
+	<option2points>
+		<object cabeza="1">11555</object>
+		<object cabeza="2">-111000</object>
+		<object cabeza="3">113666</object>
+		<object torso="1">119888</object>
+		<object torso="2">-116777</object>
+		<object torso="3">112666</object>
+	</option2points>
+  </question>
+</questions>
