@@ -673,7 +673,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -190, y: -110}
-  m_SizeDelta: {x: 60, y: 50}
+  m_SizeDelta: {x: 80, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &732242169
 MonoBehaviour:
@@ -1886,6 +1886,14 @@ MonoBehaviour:
   randomizer: {fileID: 34029651}
   SECONDS_PER_WORD: 0.45
   life: {fileID: 879831158}
+  timer: {fileID: 2069694272}
+  timeOutTexts:
+  - "Ya te est\xE1s pasando... \xBFNo me vas a decir nada?"
+  - "Eso, eso... t\xFA calla, que as\xED est\xE1s m\xE1s guapo."
+  - "\xBFTe ha mordido la lengua el gato? \xBFO qu\xE9?"
+  - "Me est\xE1s cansando. Creo que me voy a ir a casa..."
+  - "No s\xE9 que te pasa. Hoy est\xE1s muy raro... como ausente..."
+  POINTS_IN_TIMEOUT: 15
 --- !u!1 &1942312624
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,7 +1973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1995233243
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2105,7 +2113,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 190, y: -110}
-  m_SizeDelta: {x: 60, y: 50}
+  m_SizeDelta: {x: 80, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2017468447
 MonoBehaviour:
@@ -2226,7 +2234,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -271, y: 115.000015}
-  m_SizeDelta: {x: 120, y: 20}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2069694272
 MonoBehaviour:
@@ -2239,9 +2247,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e072edefd3e1b74fa3876ab3709a625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  INIT_VALUE: 10
+  INIT_VALUE: 20
   timerText: {fileID: 1073390426}
   timerImage: {fileID: 459240091}
+  questioner: {fileID: 1813569078}
 --- !u!1 &2089844207
 GameObject:
   m_ObjectHideFlags: 0

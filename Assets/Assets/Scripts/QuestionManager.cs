@@ -22,6 +22,10 @@ public class QuestionManager : MonoBehaviour {
 	public float SECONDS_PER_WORD = 0.45f;
 
 	public BarraAmor life;
+	public Timer timer;
+	public List<string> timeOutTexts;
+
+	public float POINTS_IN_TIMEOUT = 15; 
 
 	// Use this for initialization
 	void Start ()
@@ -69,7 +73,6 @@ public class QuestionManager : MonoBehaviour {
 			//Wait for X seconds
 			// Consideramos que la longitud media de una palabra es de 5 letras... aprox... xD.
 			float waitSecs = (float)texto.Length * SECONDS_PER_WORD / 5.0f;
-			Debug.Log("MUESTRA EL TEXTO " + waitSecs + " secs.");
 			yield return new WaitForSeconds(waitSecs);
 		}		
 
@@ -82,6 +85,53 @@ public class QuestionManager : MonoBehaviour {
 		option1.interactable = true;
 		option2.gameObject.SetActive(true);
 		option2.interactable = true;
+
+		timer.ResetTimer();
+	}
+
+	public void TimeOut()
+	{
+		StartCoroutine(InternalTimeOut());
+	}
+
+	private IEnumerator InternalTimeOut()
+	{
+		// Desactiva los botones
+		option1.interactable = false;
+		option2.interactable = false;
+
+		Debug.Log("TE QUITO PUNTosososS: 10");
+		life.amorValue -= POINTS_IN_TIMEOUT;
+		Debug.Log("PUNTOS ACTUALES: " + life.amorValue);
+
+		// TODO: Animación de has fallado
+
+		// Textos de timeOut (coge uno al azar)
+		int rand = UnityEngine.Random.Range(0, timeOutTexts.Count);
+		string texto = timeOutTexts[rand];
+		questionText.text = texto;
+		//Wait for X seconds
+		// Consideramos que la longitud media de una palabra es de 5 letras... aprox... xD.
+		float waitSecs = (float)texto.Length * SECONDS_PER_WORD / 5.0f;
+		yield return new WaitForSeconds(waitSecs);
+
+		// Si pierde o gana, se llamaría aquí a la escena final
+		if (life.amorValue <= 0)
+		{
+			GameManager.YouLoseEnd();
+		}
+		else if (life.amorValue >= life.MAX_VALUE)
+		{
+			GameManager.YouWinEnd();
+		}
+
+		RemoveCurrentQuestion();
+		timer.RemoveTimer();
+
+		// Espera sin texto 1 o 2 segundos
+		yield return new WaitForSeconds(1);
+
+		LoadNewQuestion();
 	}
 
 	public void CheckQuestion(int optionSelected)
@@ -94,6 +144,8 @@ public class QuestionManager : MonoBehaviour {
 		// Desactiva los botones
 		option1.interactable = false;	
 		option2.interactable = false;
+
+		timer.StopTimer();
 
 		// Checkear el resultado y calcular los puntos según la opción elegida, y nuestras features
 		int result = 0;
@@ -145,7 +197,6 @@ public class QuestionManager : MonoBehaviour {
 				//Wait for X seconds
 				// Consideramos que la longitud media de una palabra es de 5 letras... aprox... xD.
 				float waitSecs = (float)texto.Length * SECONDS_PER_WORD / 5.0f;
-				Debug.Log("MUESTRA EL TEXTO " + waitSecs + " secs.");
 				yield return new WaitForSeconds(waitSecs);
 			}
 		}
@@ -160,7 +211,6 @@ public class QuestionManager : MonoBehaviour {
 				//Wait for X seconds
 				// Consideramos que la longitud media de una palabra es de 5 letras... aprox... xD.
 				float waitSecs = (float)texto.Length * SECONDS_PER_WORD / 5.0f;
-				Debug.Log("MUESTRA EL TEXTO " + waitSecs + " secs.");
 				yield return new WaitForSeconds(waitSecs);
 			}
 		}
@@ -168,19 +218,18 @@ public class QuestionManager : MonoBehaviour {
 		// Si pierde o gana, se llamaría aquí a la escena final
 		if (life.amorValue <= 0)
 		{
-			// PERDISTE!!!
 			GameManager.YouLoseEnd();
 		}
 		else if(life.amorValue >= life.MAX_VALUE)
 		{
-			// GANASTE!!!
 			GameManager.YouWinEnd();
 		}
 		
 		RemoveCurrentQuestion();
+		timer.RemoveTimer();
 
-		// Espera sin texto 2 o 3 segundos
-		yield return new WaitForSeconds(2);
+		// Espera sin texto 1 o 2 segundos
+		yield return new WaitForSeconds(1);
 
 		LoadNewQuestion();
 	}
