@@ -3,17 +3,9 @@ using System.Collections.Generic;
 using System.Xml;
 using UnityEngine;
 
-public class XmlParser : MonoBehaviour {
+public class XmlParser {
 
-	public TextAsset XmlAsset;
-
-	// Use this for initialization
-	void Start()
-	{
-		XmlToArray();
-	}
-
-	class Question
+	public class Question
 	{
 		public List<string> texts;
 		public string option1text;
@@ -40,10 +32,11 @@ public class XmlParser : MonoBehaviour {
 		}
 	};
 
-	List<Dictionary<int, Question>> questions = new List<Dictionary<int, Question>>();
 
-	public void XmlToArray()
+	public Dictionary<int, Question> XmlToArray(TextAsset XmlAsset)
 	{
+		Dictionary<int, Question> questions = new Dictionary<int, Question>();
+
 		XmlDocument xmlDoc = new XmlDocument(); // xmlDoc is the new xml document.
 		xmlDoc.LoadXml(XmlAsset.text); // load the file.
 		XmlNodeList questionsList = xmlDoc.GetElementsByTagName("question"); // array of the question nodes.
@@ -60,37 +53,37 @@ public class XmlParser : MonoBehaviour {
 				if (questionItem.Name == "id")
 				{
 					tempId = Int32.Parse(questionItem.InnerText);
-					Debug.Log("ID: " + questionItem.InnerText);
+					//Debug.Log("ID: " + questionItem.InnerText);
 				}
 
 				if (questionItem.Name == "text")
 				{
 					tempQuestion.texts.Add(questionItem.InnerText);
-					Debug.Log("Text: " + questionItem.InnerText);
+					//Debug.Log("Text: " + questionItem.InnerText);
 				}
 
 				if (questionItem.Name == "option1")
 				{
 					tempQuestion.option1text = questionItem.InnerText;
-					Debug.Log("Option1: " + questionItem.InnerText);
+					//Debug.Log("Option1: " + questionItem.InnerText);
 				}
 
 				if (questionItem.Name == "option2")
 				{
 					tempQuestion.option2text = questionItem.InnerText;
-					Debug.Log("Option2: " + questionItem.InnerText);
+					//Debug.Log("Option2: " + questionItem.InnerText);
 				}	
 
 				if (questionItem.Name == "correctanswer")
 				{
 					tempQuestion.correctAnswerTexts.Add(questionItem.InnerText);
-					Debug.Log("Correctanswer: " + questionItem.InnerText);
+					//Debug.Log("Correctanswer: " + questionItem.InnerText);
 				}
 
 				if (questionItem.Name == "wronganswer")
 				{
 					tempQuestion.wrongAnswerTexts.Add(questionItem.InnerText);
-					Debug.Log("Wronganswer: " + questionItem.InnerText);
+					//Debug.Log("Wronganswer: " + questionItem.InnerText);
 				}
 
 				// Aquí parseamos los puntos de cada pregunta y opción //
@@ -116,18 +109,18 @@ public class XmlParser : MonoBehaviour {
 							KeyValuePair<string, int> tempPair = new KeyValuePair<string, int>(tempAttrValue, tempPoints);
 
 							tempList.Add(new KeyValuePair<string, KeyValuePair<string, int>>(tempAttrName, tempPair));
-							if(questionItem.Name == "option1points")
-								Debug.Log("OPT1: " + tempAttrName + " -> " + tempAttrValue + ": " + tempPoints);
-							else if (questionItem.Name == "option2points")
-								Debug.Log("OPT2: " + tempAttrName + " -> " + tempAttrValue + ": " + tempPoints);
+							//if(questionItem.Name == "option1points")
+							//	Debug.Log("OPT1: " + tempAttrName + " -> " + tempAttrValue + ": " + tempPoints);
+							//else if (questionItem.Name == "option2points")
+							//	//Debug.Log("OPT2: " + tempAttrName + " -> " + tempAttrValue + ": " + tempPoints);
 						}
 					}
-					// Aquí lo metemos en uno u otro dicccionario en función de si es opcion1 o opcion2
-
 				}	
 			}
-			Debug.Log("***********************************");
-			//questions.Add(obj); // add whole obj dictionary in the levels[].
+			questions.Add(tempId, tempQuestion);
+			//Debug.Log("***********************************");
 		}
+
+		return questions;
 	}
 }
