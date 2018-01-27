@@ -189,7 +189,7 @@
 		<object fondo="2">5</object>
 		<object fondo="3">0</object>
 		<object cabeza="0">-5</object>
-		<object cabeza="1">-5/object>
+		<object cabeza="1">-5</object>
 		<object cabeza="2">0</object>
 		<object cabeza="3">0</object>
 		<object cabeza="4">0</object>
@@ -221,7 +221,7 @@
 		<object fondo="2">-5</object>
 		<object fondo="3">0</object>
 		<object cabeza="0">5</object>
-		<object cabeza="1">5/object>
+		<object cabeza="1">5</object>
 		<object cabeza="2">0</object>
 		<object cabeza="3">0</object>
 		<object cabeza="4">0</object>
@@ -263,7 +263,7 @@
 		<object fondo="2">0</object>
 		<object fondo="3">0</object>
 		<object cabeza="0">0</object>
-		<object cabeza="1">0/object>
+		<object cabeza="1">0</object>
 		<object cabeza="2">-5</object>
 		<object cabeza="3">-5</object>
 		<object cabeza="4">0</object>
@@ -296,7 +296,7 @@
 		<object fondo="2">0</object>
 		<object fondo="3">0</object>
 		<object cabeza="0">0</object>
-		<object cabeza="1">0/object>
+		<object cabeza="1">0</object>
 		<object cabeza="2">5</object>
 		<object cabeza="3">5</object>
 		<object cabeza="4">0</object>
@@ -338,7 +338,7 @@
 		<object fondo="2">0</object>
 		<object fondo="3">0</object>
 		<object cabeza="0">0</object>
-		<object cabeza="1">0/object>
+		<object cabeza="1">0</object>
 		<object cabeza="2">0</object>
 		<object cabeza="3">0</object>
 		<object cabeza="4">0</object>
@@ -371,7 +371,7 @@
 		<object fondo="2">0</object>
 		<object fondo="3">0</object>
 		<object cabeza="0">0</object>
-		<object cabeza="1">0/object>
+		<object cabeza="1">0</object>
 		<object cabeza="2">0</object>
 		<object cabeza="3">0</object>
 		<object cabeza="4">0</object>
@@ -413,7 +413,7 @@
 		<object fondo="2">0</object>
 		<object fondo="3">0</object>
 		<object cabeza="0">0</object>
-		<object cabeza="1">0/object>
+		<object cabeza="1">0</object>
 		<object cabeza="2">0</object>
 		<object cabeza="3">0</object>
 		<object cabeza="4">0</object>
@@ -446,7 +446,7 @@
 		<object fondo="2">0</object>
 		<object fondo="3">0</object>
 		<object cabeza="0">0</object>
-		<object cabeza="1">0/object>
+		<object cabeza="1">0</object>
 		<object cabeza="2">0</object>
 		<object cabeza="3">0</object>
 		<object cabeza="4">0</object>
@@ -487,7 +487,7 @@
 		<object fondo="2">0</object>
 		<object fondo="3">0</object>
 		<object cabeza="0">5</object>
-		<object cabeza="1">5/object>
+		<object cabeza="1">5</object>
 		<object cabeza="2">-5</object>
 		<object cabeza="3">-5</object>
 		<object cabeza="4">0</object>
@@ -520,7 +520,7 @@
 		<object fondo="2">0</object>
 		<object fondo="3">0</object>
 		<object cabeza="0">-5</object>
-		<object cabeza="1">-5/object>
+		<object cabeza="1">-5</object>
 		<object cabeza="2">5</object>
 		<object cabeza="3">5</object>
 		<object cabeza="4">0</object>
