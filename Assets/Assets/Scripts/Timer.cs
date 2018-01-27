@@ -28,7 +28,7 @@ public class Timer : MonoBehaviour {
 			{
 				timeLeft = 0;
 				timerText.text = timeLeft.ToString("F2");
-				SceneManager.TimeOut();
+				GameManager.TimeOut();
 			}
 		}
 	}

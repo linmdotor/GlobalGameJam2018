@@ -169,12 +169,12 @@ public class QuestionManager : MonoBehaviour {
 		if (life.amorValue <= 0)
 		{
 			// PERDISTE!!!
-			SceneManager.YouLoseEnd();
+			GameManager.YouLoseEnd();
 		}
 		else if(life.amorValue >= life.MAX_VALUE)
 		{
 			// GANASTE!!!
-			SceneManager.YouWinEnd();
+			GameManager.YouWinEnd();
 		}
 		
 		RemoveCurrentQuestion();
