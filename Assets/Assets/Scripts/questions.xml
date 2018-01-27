@@ -1,32 +1,81 @@
 <questions>
   <question>
     <id>1</id>
-    <text>Hola guapo... ¿tendrías un rato para hacer cosas conmigo?</text>
-	<text>Oye, me darías un masaje, ¿por favor?</text>
-    <option1>Estás flipando</option1>	
-    <option2>Claro que sí, acercate un poco...</option2>
+    <text>Hola que tal, ¿Quieres algo?</text>
+    <option1>Sí, toma esta rosa.</option1>	
+    <option2>Paso de tu cara.</option2>
 	<correctanswer>Mnnn... tú sabes lo que me gusta...</correctanswer>
 	<correctanswer>Quizás deberíamos irnos a otro sitio</correctanswer>
     <wronganswer>¡Eres un tocabolas!</wronganswer>
 	<option1points>
+		<object fondo="0">0</object>
+		<object fondo="1">5</object>
+		<object fondo="2">5</object>
+		<object fondo="3">0</object>
 		<object cabeza="0">5</object>
-		<object cabeza="1">-10</object>
+		<object cabeza="1">5</object>
 		<object cabeza="2">0</object>
-		<object torso="0">5</object>
+		<object cabeza="3">0</object>
+		<object cabeza="4">0</object>
+		<object cabeza="5">0</object>
+		<object cabeza="6">-5</object>
+		<object cabeza="7">-5</object>
+		<object horoscopo="0">0</object>
+		<object horoscopo="1">-5</object>
+		<object horoscopo="2">0</object>
+		<object horoscopo="3">-5</object>
+		<object horoscopo="4">0</object>
+		<object horoscopo="5">5</object>
+		<object horoscopo="6">5</object>
+		<object horoscopo="7">0</object>
+		<object horoscopo="8">-5</object>
+		<object horoscopo="9">0</object>
+		<object horoscopo="10">0</object>
+		<object horoscopo="11">0</object>
+		<object torso="0">0</object>
 		<object torso="1">5</object>
-		<object torso="2">-10</object>
+		<object torso="2">5</object>
+		<object torso="3">0</object>
+		<object torso="4">0</object>
+		<object torso="5">5</object>
+				
 	</option1points>
 	<option2points>
-		<object cabeza="0">0</object>
-		<object cabeza="1">0</object>
-		<object cabeza="2">10</object>
-		<object torso="0">-10</object>
+		<object fondo="0">0</object>
+		<object fondo="1">-5</object>
+		<object fondo="2">-5</object>
+		<object fondo="3">0</object>
+		<object cabeza="0">-5</object>
+		<object cabeza="1">-5</object>
+		<object cabeza="2">0</object>
+		<object cabeza="3">0</object>
+		<object cabeza="4">0</object>
+		<object cabeza="5">0</object>
+		<object cabeza="6">5</object>
+		<object cabeza="7">5</object>
+		<object horoscopo="0">0</object>
+		<object horoscopo="1">0</object>
+		<object horoscopo="2">0</object>
+		<object horoscopo="3">5</object>
+		<object horoscopo="4">0</object>
+		<object horoscopo="5">-5</object>
+		<object horoscopo="6">-5</object>
+		<object horoscopo="7">0</object>
+		<object horoscopo="8">0</object>
+		<object horoscopo="9">0</object>
+		<object horoscopo="10">5</object>
+		<object horoscopo="11">0</object>
+		<object torso="0">0</object>
 		<object torso="1">-5</object>
-		<object torso="2">5</object>
+		<object torso="2">-5</object>
+		<object torso="3">0</object>
+		<object torso="4">0</object>
+		<object torso="5">-5</object>
+				
 	</option2points>
   </question>
   
-  <question>
+  <!--<question>
     <id>2</id>
     <text>Estoy cansada de la rutina...</text>
     <option1>Yo sí que estoy cansada de tí</option1>
@@ -50,4 +99,451 @@
 		<object torso="2">10</object>
 	</option2points>
   </question>
-</questions>
+</questions>-->
+
+  <question>
+    <id>2</id>
+    <text>Hoy es mi cumpleaños.</text>
+    <option1>Voy a hacer un fiestón, vente.</option1>	
+    <option2>Me quedaré en casa a jugar con mi ps4, ¿te ape?</option2>
+	<correctanswer>Genial, me encantaría.</correctanswer>
+    <wronganswer>Paso, ese no es mi rollo.</wronganswer>
+	<option1points>
+		<object fondo="0">0</object>
+		<object fondo="1">5</object>
+		<object fondo="2">-5</object>
+		<object fondo="3">-5</object>
+		<object cabeza="0">0</object>
+		<object cabeza="1">0</object>
+		<object cabeza="2">5</object>
+		<object cabeza="3">5</object>
+		<object cabeza="4">0</object>
+		<object cabeza="5">0</object>
+		<object cabeza="6">-5</object>
+		<object cabeza="7">-5</object>
+		<object horoscopo="0">5</object>
+		<object horoscopo="1">0</object>
+		<object horoscopo="2">0</object>
+		<object horoscopo="3">0</object>
+		<object horoscopo="4">0</object>
+		<object horoscopo="5">0</object>
+		<object horoscopo="6">0</object>
+		<object horoscopo="7">0</object>
+		<object horoscopo="8">0</object>
+		<object horoscopo="9">-5</object>
+		<object horoscopo="10">0</object>
+		<object horoscopo="11">0</object>
+		<object torso="0">-5</object>
+		<object torso="1">0</object>
+		<object torso="2">-5</object>
+		<object torso="3">5</object>
+		<object torso="4">5</object>
+		<object torso="5">5</object>
+				
+	</option1points>
+	<option2points>
+		<object fondo="0">0</object>
+		<object fondo="1">-5</object>
+		<object fondo="2">5</object>
+		<object fondo="3">5</object>
+		<object cabeza="0">0</object>
+		<object cabeza="1">0</object>
+		<object cabeza="2">-5</object>
+		<object cabeza="3">-5</object>
+		<object cabeza="4">0</object>
+		<object cabeza="5">0</object>
+		<object cabeza="6">5</object>
+		<object cabeza="7">5</object>
+		<object horoscopo="0">-5</object>
+		<object horoscopo="1">0</object>
+		<object horoscopo="2">0</object>
+		<object horoscopo="3">0</object>
+		<object horoscopo="4">0</object>
+		<object horoscopo="5">0</object>
+		<object horoscopo="6">0</object>
+		<object horoscopo="7">0</object>
+		<object horoscopo="8">0</object>
+		<object horoscopo="9">5</object>
+		<object horoscopo="10">0</object>
+		<object horoscopo="11">0</object>
+		<object torso="0">5</object>
+		<object torso="1">0</object>
+		<object torso="2">5</object>
+		<object torso="3">-5</object>
+		<object torso="4">-5</object>
+		<object torso="5">-5</object>
+				
+	</option2points>
+  </question>
+
+  <question>
+    <id>3</id>
+    <text>Mañana es San Valentín...</text>
+    <option1>A mí San Tontín no me va.</option1>	
+    <option2>Tú y yo. Juntos.</option2>
+	<correctanswer>Qué bien, lo mismo me pasa a mí.</correctanswer>
+    <wronganswer>Uffs... pues a mi me apetecía... otra cosa...</wronganswer>
+	<option1points>
+		<object fondo="0">0</object>
+		<object fondo="1">-5</object>
+		<object fondo="2">5</object>
+		<object fondo="3">0</object>
+		<object cabeza="0">-5</object>
+		<object cabeza="1">-5/object>
+		<object cabeza="2">0</object>
+		<object cabeza="3">0</object>
+		<object cabeza="4">0</object>
+		<object cabeza="5">0</object>
+		<object cabeza="6">5</object>
+		<object cabeza="7">5</object>
+		<object horoscopo="0">0</object>
+		<object horoscopo="1">0</object>
+		<object horoscopo="2">-5</object>
+		<object horoscopo="3">5</object>
+		<object horoscopo="4">5</object>
+		<object horoscopo="5">-5</object>
+		<object horoscopo="6">-5</object>
+		<object horoscopo="7">0</object>
+		<object horoscopo="8">0</object>
+		<object horoscopo="9">0</object>
+		<object horoscopo="10">0</object>
+		<object horoscopo="11">5</object>
+		<object torso="0">0</object>
+		<object torso="1">-5</object>
+		<object torso="2">5</object>
+		<object torso="3">0</object>
+		<object torso="4">0</object>
+		<object torso="5">-5</object>			
+	</option1points>
+	<option2points>
+		<object fondo="0">0</object>
+		<object fondo="1">5</object>
+		<object fondo="2">-5</object>
+		<object fondo="3">0</object>
+		<object cabeza="0">5</object>
+		<object cabeza="1">5/object>
+		<object cabeza="2">0</object>
+		<object cabeza="3">0</object>
+		<object cabeza="4">0</object>
+		<object cabeza="5">0</object>
+		<object cabeza="6">-5</object>
+		<object cabeza="7">-5</object>
+		<object horoscopo="0">0</object>
+		<object horoscopo="1">0</object>
+		<object horoscopo="2">5</object>
+		<object horoscopo="3">-5</object>
+		<object horoscopo="4">0</object>
+		<object horoscopo="5">5</object>
+		<object horoscopo="6">5</object>
+		<object horoscopo="7">0</object>
+		<object horoscopo="8">0</object>
+		<object horoscopo="9">0</object>
+		<object horoscopo="10">0</object>
+		<object horoscopo="11">-5</object>
+		<object torso="0">0</object>
+		<object torso="1">5</object>
+		<object torso="2">-5</object>
+		<object torso="3">0</object>
+		<object torso="4">0</object>
+		<object torso="5">5</object>
+				
+	</option2points>
+  </question>
+
+  <question>
+    <id>4</id>
+    <text>¡Oh! Una tarta de chocolate...</text>
+    <option1>¡Yaasss! ¡Pa' mí! ÑOM ÑOM </option1>	
+    <option2>¡NO! Que estoy haciendo la dieta del cucurucho...</option2>
+	<correctanswer>¡Seh!</correctanswer>
+    <wronganswer>Uffs... pues a mi me apetecía... otra cosa...</wronganswer>
+	<option1points>
+		<object fondo="0">5</object>
+		<object fondo="1">-5</object>
+		<object fondo="2">0</object>
+		<object fondo="3">0</object>
+		<object cabeza="0">0</object>
+		<object cabeza="1">0/object>
+		<object cabeza="2">-5</object>
+		<object cabeza="3">-5</object>
+		<object cabeza="4">0</object>
+		<object cabeza="5">0</object>
+		<object cabeza="6">0</object>
+		<object cabeza="7">0</object>
+		<object horoscopo="0">-5</object>
+		<object horoscopo="1">0</object>
+		<object horoscopo="2">5</object>
+		<object horoscopo="3">0</object>
+		<object horoscopo="4">0</object>
+		<object horoscopo="5">0</object>
+		<object horoscopo="6">0</object>
+		<object horoscopo="7">0</object>
+		<object horoscopo="8">0</object>
+		<object horoscopo="9">0</object>
+		<object horoscopo="10">0</object>
+		<object horoscopo="11">0</object>
+		<object torso="0">0</object>
+		<object torso="1">0</object>
+		<object torso="2">0</object>
+		<object torso="3">-5</object>
+		<object torso="4">-5</object>
+		<object torso="5">-5</object>
+				
+	</option1points>
+	<option2points>
+		<object fondo="0">-5</object>
+		<object fondo="1">5</object>
+		<object fondo="2">0</object>
+		<object fondo="3">0</object>
+		<object cabeza="0">0</object>
+		<object cabeza="1">0/object>
+		<object cabeza="2">5</object>
+		<object cabeza="3">5</object>
+		<object cabeza="4">0</object>
+		<object cabeza="5">0</object>
+		<object cabeza="6">0</object>
+		<object cabeza="7">0</object>
+		<object horoscopo="0">5</object>
+		<object horoscopo="1">0</object>
+		<object horoscopo="2">-5</object>
+		<object horoscopo="3">0</object>
+		<object horoscopo="4">0</object>
+		<object horoscopo="5">0</object>
+		<object horoscopo="6">0</object>
+		<object horoscopo="7">0</object>
+		<object horoscopo="8">0</object>
+		<object horoscopo="9">0</object>
+		<object horoscopo="10">0</object>
+		<object horoscopo="11">5</object>
+		<object torso="0">0</object>
+		<object torso="1">0</object>
+		<object torso="2">0</object>
+		<object torso="3">5</object>
+		<object torso="4">5</object>
+		<object torso="5">5</object>
+				
+	</option2points>
+  </question>
+
+  <question>
+    <id>5</id>
+    <text>Mañana es la noche de reyes ¡SOS!</text>
+    <option1>Vas a comprarle una caja de bombones. El chocolate nunca falla. </option1>	
+    <option2>Le haces una escultura con rollos de papel higiénico, un regalo que no olvidará.</option2>
+	<correctanswer>Justo lo que quería.</correctanswer>
+    <wronganswer>No tengo palabras...</wronganswer>
+	<option1points>
+		<object fondo="0">5</object>
+		<object fondo="1">0</object>
+		<object fondo="2">0</object>
+		<object fondo="3">0</object>
+		<object cabeza="0">0</object>
+		<object cabeza="1">0/object>
+		<object cabeza="2">0</object>
+		<object cabeza="3">0</object>
+		<object cabeza="4">0</object>
+		<object cabeza="5">0</object>
+		<object cabeza="6">0</object>
+		<object cabeza="7">0</object>
+		<object horoscopo="0">5</object>
+		<object horoscopo="1">0</object>
+		<object horoscopo="2">0</object>
+		<object horoscopo="3">-5</object>
+		<object horoscopo="4">0</object>
+		<object horoscopo="5">0</object>
+		<object horoscopo="6">0</object>
+		<object horoscopo="7">0</object>
+		<object horoscopo="8">0</object>
+		<object horoscopo="9">0</object>
+		<object horoscopo="10">0</object>
+		<object horoscopo="11">0</object>
+		<object torso="0">0</object>
+		<object torso="1">0</object>
+		<object torso="2">0</object>
+		<object torso="3">5</object>
+		<object torso="4">0</object>
+		<object torso="5">0</object>
+				
+	</option1points>
+	<option2points>
+		<object fondo="0">-5</object>
+		<object fondo="1">0</object>
+		<object fondo="2">0</object>
+		<object fondo="3">0</object>
+		<object cabeza="0">0</object>
+		<object cabeza="1">0/object>
+		<object cabeza="2">0</object>
+		<object cabeza="3">0</object>
+		<object cabeza="4">0</object>
+		<object cabeza="5">0</object>
+		<object cabeza="6">0</object>
+		<object cabeza="7">0</object>
+		<object horoscopo="0">5</object>
+		<object horoscopo="1">0</object>
+		<object horoscopo="2">5</object>
+		<object horoscopo="3">5</object>
+		<object horoscopo="4">0</object>
+		<object horoscopo="5">0</object>
+		<object horoscopo="6">0</object>
+		<object horoscopo="7">0</object>
+		<object horoscopo="8">0</object>
+		<object horoscopo="9">0</object>
+		<object horoscopo="10">0</object>
+		<object horoscopo="11">0</object>
+		<object torso="0">0</object>
+		<object torso="1">0</object>
+		<object torso="2">0</object>
+		<object torso="3">5</object>
+		<object torso="4">0</object>
+		<object torso="5">0</object>
+
+	</option2points>
+  </question>
+
+  <question>
+    <id>6</id>
+    <text>Un cachorrito se te acerca</text>
+    <option1>Te agachas a abrazarlo y te mea en el brazo. </option1>	
+    <option2>Sonries forzadamente mientras le pegas una patada con disimulo.</option2>
+	<correctanswer>Jejeje, un perrito.</correctanswer>
+    <wronganswer>Qué mal, qué mala actitud.</wronganswer>
+	<option1points>
+		<object fondo="0">0</object>
+		<object fondo="1">0</object>
+		<object fondo="2">0</object>
+		<object fondo="3">0</object>
+		<object cabeza="0">0</object>
+		<object cabeza="1">0/object>
+		<object cabeza="2">0</object>
+		<object cabeza="3">0</object>
+		<object cabeza="4">0</object>
+		<object cabeza="5">0</object>
+		<object cabeza="6">0</object>
+		<object cabeza="7">0</object>
+		<object horoscopo="0">5</object>
+		<object horoscopo="1">-5</object>
+		<object horoscopo="2">0</object>
+		<object horoscopo="3">-5</object>
+		<object horoscopo="4">-5</object>
+		<object horoscopo="5">0</object>
+		<object horoscopo="6">0</object>
+		<object horoscopo="7">20</object>
+		<object horoscopo="8">-5</object>
+		<object horoscopo="9">0</object>
+		<object horoscopo="10">0</object>
+		<object horoscopo="11">0</object>
+		<object torso="0">0</object>
+		<object torso="1">0</object>
+		<object torso="2">0</object>
+		<object torso="3">0</object>
+		<object torso="4">0</object>
+		<object torso="5">0</object>
+				
+	</option1points>
+	<option2points>
+		<object fondo="0">0</object>
+		<object fondo="1">0</object>
+		<object fondo="2">0</object>
+		<object fondo="3">0</object>
+		<object cabeza="0">0</object>
+		<object cabeza="1">0/object>
+		<object cabeza="2">0</object>
+		<object cabeza="3">0</object>
+		<object cabeza="4">0</object>
+		<object cabeza="5">0</object>
+		<object cabeza="6">0</object>
+		<object cabeza="7">0</object>
+		<object horoscopo="0">5</object>
+		<object horoscopo="1">0</object>
+		<object horoscopo="2">0</object>
+		<object horoscopo="3">5</object>
+		<object horoscopo="4">0</object>
+		<object horoscopo="5">0</object>
+		<object horoscopo="6">0</object>
+		<object horoscopo="7">-20</object>
+		<object horoscopo="8">-5</object>
+		<object horoscopo="9">0</object>
+		<object horoscopo="10">5</object>
+		<object horoscopo="11">0</object>
+		<object torso="0">0</object>
+		<object torso="1">0</object>
+		<object torso="2">0</object>
+		<object torso="3">0</object>
+		<object torso="4">0</object>
+		<object torso="5">0</object>
+	</option2points>
+  </question>
+
+  <question>
+    <id>8</id>
+    <text>Te sale un plan con los "boys"...</text>
+    <option1>Prefieres quedarte con tu "crush" para hacer manitas. </option1>	
+    <option2>Te llevas a tu "crush" con ellos y le eruptas en la cara la primera birra.</option2>
+	<correctanswer>Mmmmh... rico.</correctanswer>
+    <wronganswer>Uuffs.. qué plan.</wronganswer>
+	<option1points>
+		<object fondo="0">-5</object>
+		<object fondo="1">5</object>
+		<object fondo="2">0</object>
+		<object fondo="3">0</object>
+		<object cabeza="0">5</object>
+		<object cabeza="1">5/object>
+		<object cabeza="2">-5</object>
+		<object cabeza="3">-5</object>
+		<object cabeza="4">0</object>
+		<object cabeza="5">0</object>
+		<object cabeza="6">0</object>
+		<object cabeza="7">0</object>
+		<object horoscopo="0">-5</object>
+		<object horoscopo="1">-5</object>
+		<object horoscopo="2">0</object>
+		<object horoscopo="3">0</object>
+		<object horoscopo="4">0</object>
+		<object horoscopo="5">5</object>
+		<object horoscopo="6">5</object>
+		<object horoscopo="7">0</object>
+		<object horoscopo="8">-5</object>
+		<object horoscopo="9">0</object>
+		<object horoscopo="10">-5</object>
+		<object horoscopo="11">-5</object>
+		<object torso="0">0</object>
+		<object torso="1">5</object>
+		<object torso="2">0</object>
+		<object torso="3">-5</object>
+		<object torso="4">-5</object>
+		<object torso="5">5</object>
+				
+	</option1points>
+	<option2points>
+		<object fondo="0">5</object>
+		<object fondo="1">-5</object>
+		<object fondo="2">0</object>
+		<object fondo="3">0</object>
+		<object cabeza="0">-5</object>
+		<object cabeza="1">-5/object>
+		<object cabeza="2">5</object>
+		<object cabeza="3">5</object>
+		<object cabeza="4">0</object>
+		<object cabeza="5">0</object>
+		<object cabeza="6">0</object>
+		<object cabeza="7">0</object>
+		<object horoscopo="0">5</object>
+		<object horoscopo="1">5</object>
+		<object horoscopo="2">5</object>
+		<object horoscopo="3">0</object>
+		<object horoscopo="4">-5</object>
+		<object horoscopo="5">-5</object>
+		<object horoscopo="6">-5</object>
+		<object horoscopo="7">0</object>
+		<object horoscopo="8">5</object>
+		<object horoscopo="9">0</object>
+		<object horoscopo="10">0</object>
+		<object horoscopo="11">5</object>
+		<object torso="0">0</object>
+		<object torso="1">-5</object>
+		<object torso="2">0</object>
+		<object torso="3">5</object>
+		<object torso="4">5</object>
+		<object torso="5">-5</object>
+	</option2points>
+  </question>
