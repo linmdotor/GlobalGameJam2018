@@ -121,7 +121,7 @@ AnimationClip:
   m_GenerateMotionCurves: 0
   m_Events:
   - time: 40.883335
-    functionName: 
+    functionName: EndIntro
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
