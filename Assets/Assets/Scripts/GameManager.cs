@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -17,5 +18,14 @@ public class GameManager : MonoBehaviour {
 	public static void YouLoseEnd()
 	{
 		Debug.Log("PERDISTE");
+	}
+
+	// Update is called once per frame
+	void Update()
+	{
+		if (Input.GetKey(KeyCode.Escape))
+		{
+			SceneManager.LoadScene("MainMenu");
+		}
 	}
 }
