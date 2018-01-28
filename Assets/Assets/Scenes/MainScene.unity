@@ -2959,7 +2959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e072edefd3e1b74fa3876ab3709a625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  INIT_VALUE: 20
+  INIT_VALUE: 60
   timerText: {fileID: 1073390426}
   timerImage: {fileID: 459240091}
   questioner: {fileID: 1813569078}
