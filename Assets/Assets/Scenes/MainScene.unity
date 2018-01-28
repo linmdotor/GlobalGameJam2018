@@ -165,16 +165,18 @@ MonoBehaviour:
   - {fileID: 1092079725}
   characterName: {fileID: 1717407245}
   randomNames:
-  - Pepito
-  - Juanito
-  - Federico
-  - John
-  - Jaimie
-  - Julia
-  - Elsa
-  - Ken
-  - Barbie
-  - Leire
+  - Rufino
+  - "Beltr\xE1n"
+  - Isandro
+  - Conrado
+  - Rigoberto
+  - Herme
+  - Renata
+  - Greta
+  - Faustina
+  - Alfonsina
+  - Hernestina
+  - Mijhaela
 --- !u!1 &158187929
 GameObject:
   m_ObjectHideFlags: 0
