@@ -12,12 +12,12 @@ public class GameManager : MonoBehaviour {
 	
 	public static void YouWinEnd()
 	{
-		Debug.Log("GANASTE");
+		SceneManager.LoadScene("EndWin");
 	}
 
 	public static void YouLoseEnd()
 	{
-		Debug.Log("PERDISTE");
+		SceneManager.LoadScene("EndLose");
 	}
 
 	// Update is called once per frame

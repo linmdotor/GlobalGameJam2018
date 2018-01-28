@@ -1230,8 +1230,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0283edc154bd98a42a8cea212c708e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MAX_VALUE: 100
-  amorValue: 50
+  MAX_VALUE: 50
+  amorValue: 25
   loveBarSlider: {fileID: 632026549}
 --- !u!1 &900377075
 GameObject:
