@@ -35,3 +35,5 @@ sysinfo.txt
 Assets/Library/
 Assets/Temp/
 Assets/.vs/
+Assets/ProjectSettings/ProjectSettings.asset.meta
+Assets/ProjectSettings/EditorBuildSettings.asset.meta
