@@ -21,6 +21,9 @@ public class QuestionManager : MonoBehaviour {
 
 	public float SECONDS_PER_WORD = 0.45f;
 
+	public Image MsgImage1;
+	public Image MsgImage2;
+
 	public BarraAmor life;
 	public Timer timer;
 	public List<string> timeOutTexts;
@@ -62,6 +65,8 @@ public class QuestionManager : MonoBehaviour {
 		option1.interactable = false;
 		option2.gameObject.SetActive(false);
 		option2.interactable = false;
+		MsgImage1.gameObject.SetActive(false);
+		MsgImage2.gameObject.SetActive(false);
 	}
 
 	private IEnumerator LaunchQuestion(XmlParser.Question question)
@@ -85,6 +90,8 @@ public class QuestionManager : MonoBehaviour {
 		option1.interactable = true;
 		option2.gameObject.SetActive(true);
 		option2.interactable = true;
+		MsgImage1.gameObject.SetActive(true);
+		MsgImage2.gameObject.SetActive(true);
 
 		timer.ResetTimer();
 	}
