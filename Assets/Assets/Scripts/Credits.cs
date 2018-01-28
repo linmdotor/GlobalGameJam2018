@@ -8,4 +8,12 @@ public class Credits : MonoBehaviour {
 		SceneManager.LoadScene("MainMenu");
 	}
 
+	// Update is called once per frame
+	void Update()
+	{
+		if (Input.GetKey(KeyCode.Escape))
+		{
+			SceneManager.LoadScene("MainMenu");
+		}
+	}
 }
